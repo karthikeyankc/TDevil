@@ -1,8 +1,13 @@
-#Author: Karthikeyan KC
-#Name: Funzoned Twitter Bot
-#Description: A Twitter bot that tweets one liners every fifteen minutes.
-#Comment: This bot is created for learning purposes and is full of 'novice' bugs. It might evolve soon. The process runs on my laptop from a terminal and it will be on and off at times.
-#Twitter: http://twitter.com/funzoned
+"""
+URL: http://geekswipe.net/2014/10/code-python-twitter-bot-in-ten-minutes/
+Author: Karthikeyan KC
+Name: Funzoned Twitter Bot
+Description: A Twitter bot that tweets one liners every fifteen minutes.
+Comment: This bot is created for learning purposes and is full of 'novice' bugs. It might evolve soon. The process runs on my laptop from a terminal and it will be on and off at times.
+Twitter: http://twitter.com/funzoned
+Bitbucket: https://bitbucket.org/karthikeyankc/funzoned-twitter-bot/src/
+
+"""
 
 from twython import Twython, TwythonError
 import time
