@@ -25,17 +25,17 @@ try:
 		buff = tweetfile.readlines()
 
 	for line in buff[:]:
-		line = line.strip(r'\n') #Strips any empty line
+		line = line.strip(r'\n') #Strips any empty line.
 		if len(line)<=140 and len(line)>0:
 			print ("Tweeting...")
 			twitter.update_status(status=line)
 			with open ('liners.txt', 'w') as tweetfile:
-				buff.remove(line) #Removes the tweeted line
+				buff.remove(line) #Removes the tweeted line.
 				tweetfile.writelines(buff)
 			time.sleep(900)
 		else:
 			with open ('liners.txt', 'w') as tweetfile:
-				buff.remove(line) #Removes the line that has more than 140 characters
+				buff.remove(line) #Removes the line that has more than 140 characters.
 				tweetfile.writelines(buff)
 			print ("Skipped line - Char length violation")
 			continue
